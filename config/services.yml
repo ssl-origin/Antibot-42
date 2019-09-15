@@ -1,0 +1,43 @@
+services:
+    nekstati.antibot42.MSQlt:
+        class: nekstati\antibot42\MSQlt
+        arguments:
+            - '@nekstati.antibot42.K3qvN'
+            - '@nekstati.antibot42.hXiG2'
+        tags:
+            - { name: event.listener }
+
+    nekstati.antibot42.hXiG2:
+        class: nekstati\antibot42\hXiG2
+        arguments:
+            - '@config'
+            - '@request'
+            - '@template'
+            - '@user'
+            - '%core.root_path%'
+            - '%core.php_ext%'
+            - '@nekstati.antibot42.j_8PT'
+        tags:
+            - { name: event.listener }
+
+    nekstati.antibot42.K3qvN:
+        class: nekstati\antibot42\K3qvN
+        arguments:
+            - '@config'
+            - '@request'
+            - '@template'
+            - '@user'
+            - '%core.root_path%'
+            - '%core.php_ext%'
+
+    nekstati.antibot42.j_8PT:
+        class: nekstati\antibot42\j_8PT
+        arguments:
+            - '@dbal.conn'
+            - '@user'
+            - '@config'
+            - '@controller.helper'
+            - '@template'
+            - '%core.root_path%'
+        calls:
+            - [Xja1g, ['@?router']]
