@@ -46,7 +46,7 @@ class release_1_0_0 extends \phpbb\db\migration\migration
 	public function update_data()
 	{
 		return [
-			['config.add', ['antibot42_version', '0.1.0']],
+			['config.add', ['antibot42_version', '0.1.0']], // Typo :)
 			['config.add', ['antibot42_config', '']],
 
 			['module.add', ['acp', 'ACP_CAT_DOT_MODS', 'ACP_ANTIBOT42']],
