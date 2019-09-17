@@ -1,14 +1,14 @@
 services:
-    nekstati.antibot42.jzDAu:
-        class: nekstati\antibot42\jzDAu
+    nekstati.antibot42.VkwMF:
+        class: nekstati\antibot42\VkwMF
         arguments:
-            - '@nekstati.antibot42.bkfp0'
-            - '@nekstati.antibot42.on5nc'
+            - '@nekstati.antibot42.RZnJl'
+            - '@nekstati.antibot42.HIFRp'
         tags:
             - { name: event.listener }
 
-    nekstati.antibot42.on5nc:
-        class: nekstati\antibot42\on5nc
+    nekstati.antibot42.HIFRp:
+        class: nekstati\antibot42\HIFRp
         arguments:
             - '@config'
             - '@request'
@@ -16,12 +16,12 @@ services:
             - '@user'
             - '%core.root_path%'
             - '%core.php_ext%'
-            - '@nekstati.antibot42.ZH33U'
+            - '@nekstati.antibot42.pymWq'
         tags:
             - { name: event.listener }
 
-    nekstati.antibot42.bkfp0:
-        class: nekstati\antibot42\bkfp0
+    nekstati.antibot42.RZnJl:
+        class: nekstati\antibot42\RZnJl
         arguments:
             - '@config'
             - '@request'
@@ -30,14 +30,14 @@ services:
             - '%core.root_path%'
             - '%core.php_ext%'
 
-    nekstati.antibot42.ZH33U:
-        class: nekstati\antibot42\ZH33U
+    nekstati.antibot42.pymWq:
+        class: nekstati\antibot42\pymWq
         arguments:
-            - '@dbal.conn'
-            - '@user'
             - '@config'
             - '@controller.helper'
+            - '@dbal.conn'
             - '@template'
+            - '@user'
             - '%core.root_path%'
         calls:
-            - [G2WyO, ['@?router']]
+            - [SgSeA, ['@?router']]
