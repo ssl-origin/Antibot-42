@@ -1,14 +1,28 @@
 services:
-    nekstati.antibot42.VkwMF:
-        class: nekstati\antibot42\VkwMF
+    nekstati.antibot42.PA9a7:
+        class: nekstati\antibot42\PA9a7
         arguments:
-            - '@nekstati.antibot42.RZnJl'
-            - '@nekstati.antibot42.HIFRp'
+            - '@nekstati.antibot42.ravC9'
+            - '@nekstati.antibot42.T39oe'
         tags:
             - { name: event.listener }
 
-    nekstati.antibot42.HIFRp:
-        class: nekstati\antibot42\HIFRp
+    nekstati.antibot42.T39oe:
+        class: nekstati\antibot42\T39oe
+        arguments:
+            - '@auth'
+            - '@config'
+            - '@request'
+            - '@template'
+            - '@user'
+            - '%core.root_path%'
+            - '%core.php_ext%'
+            - '@nekstati.antibot42.X3Gh8'
+        tags:
+            - { name: event.listener }
+
+    nekstati.antibot42.ravC9:
+        class: nekstati\antibot42\ravC9
         arguments:
             - '@config'
             - '@request'
@@ -16,22 +30,9 @@ services:
             - '@user'
             - '%core.root_path%'
             - '%core.php_ext%'
-            - '@nekstati.antibot42.pymWq'
-        tags:
-            - { name: event.listener }
 
-    nekstati.antibot42.RZnJl:
-        class: nekstati\antibot42\RZnJl
-        arguments:
-            - '@config'
-            - '@request'
-            - '@template'
-            - '@user'
-            - '%core.root_path%'
-            - '%core.php_ext%'
-
-    nekstati.antibot42.pymWq:
-        class: nekstati\antibot42\pymWq
+    nekstati.antibot42.X3Gh8:
+        class: nekstati\antibot42\X3Gh8
         arguments:
             - '@config'
             - '@controller.helper'
@@ -40,4 +41,4 @@ services:
             - '@user'
             - '%core.root_path%'
         calls:
-            - [SgSeA, ['@?router']]
+            - [s_4wP, ['@?router']]

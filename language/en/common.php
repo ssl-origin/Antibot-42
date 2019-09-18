@@ -19,4 +19,5 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'ANTIBOT42_JS_NOTICE'						=> 'Check if JavaScript is enabled in your browser.',
+	'ANTIBOT42_POSSIBLE_SPAMBOTS'				=> 'Possible spambots',
 ));
