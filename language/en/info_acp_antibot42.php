@@ -33,6 +33,9 @@ $lang = array_merge($lang, array(
 	'ACP_ANTIBOT42_GEOIP'				=> 'Enable GeoIP',
 	'ACP_ANTIBOT42_GEOIP_EXPLAIN'		=> 'The geographic location of spambots is added to the log. If your site is besieged by lots of bots, this feature may increase server load.',
 
+	'ACP_ANTIBOT42_BAN'					=> 'Ban possible spamers',
+	'ACP_ANTIBOT42_BAN_EXPLAIN'			=> 'Ban possible spamers by IP for 5 minutes after 10 attempts to bypass protection. The attempt counter will be reset to zero after the session has expired.',
+
 	'ACP_ANTIBOT42_METHODS_NOTICE'		=> 'The following options are used for testing purposes. If you are not going to participate in the testing, leave all items enabled.',
 
 	'ACP_ANTIBOT42_METHOD1'				=> 'Spambot detection method #1',

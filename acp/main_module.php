@@ -108,6 +108,7 @@ class main_module
 			'ACP_ANTIBOT42_REG'				=> $ext_config['reg'],
 			'ACP_ANTIBOT42_LOG'				=> $ext_config['log'],
 			'ACP_ANTIBOT42_GEOIP'			=> $ext_config['geoip'],
+			'ACP_ANTIBOT42_BAN'				=> $ext_config['ban'],
 			'ACP_ANTIBOT42_METHOD1'			=> $ext_config['method1'],
 			'ACP_ANTIBOT42_METHOD2'			=> $ext_config['method2'],
 			'ACP_ANTIBOT42_METHOD3'			=> $ext_config['method3'],

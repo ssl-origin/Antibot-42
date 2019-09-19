@@ -107,6 +107,13 @@
 			<label><input type="radio" class="radio" name="antibot42_config[geoip]" value="0" <!-- IF not ACP_ANTIBOT42_GEOIP -->checked="checked"<!-- ENDIF --> /> {L_DISABLED}</label>
 		</dd>
 	</dl>
+	<dl>
+		<dt><label for="antibot42_ban">{L_ACP_ANTIBOT42_BAN}{L_COLON}</label><br /><span>{L_ACP_ANTIBOT42_BAN_EXPLAIN}</span></dt>
+		<dd>
+			<label><input type="radio" class="radio" name="antibot42_config[ban]" value="1" <!-- IF ACP_ANTIBOT42_BAN -->checked="checked"<!-- ENDIF --> id="antibot42_ban" /> {L_ENABLED}</label>
+			<label><input type="radio" class="radio" name="antibot42_config[ban]" value="0" <!-- IF not ACP_ANTIBOT42_BAN -->checked="checked"<!-- ENDIF --> /> {L_DISABLED}</label>
+		</dd>
+	</dl>
 
 	<p class="ab42-notice">{L_ACP_ANTIBOT42_METHODS_NOTICE}</p>
 

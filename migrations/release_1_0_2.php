@@ -18,7 +18,7 @@ class release_1_0_2 extends \phpbb\db\migration\migration
 
 	static public function depends_on()
 	{
-		return ['\nekstati\antibot42\migrations\release_1_0_0'];
+		return ['\nekstati\antibot42\migrations\release_1_0_1'];
 	}
 
 	public function update_schema()

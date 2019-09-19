@@ -1,14 +1,14 @@
 services:
-    nekstati.antibot42.PA9a7:
-        class: nekstati\antibot42\PA9a7
+    nekstati.antibot42.fuBSo:
+        class: nekstati\antibot42\fuBSo
         arguments:
-            - '@nekstati.antibot42.ravC9'
-            - '@nekstati.antibot42.T39oe'
+            - '@nekstati.antibot42.cIaPn'
+            - '@nekstati.antibot42.fu4tB'
         tags:
             - { name: event.listener }
 
-    nekstati.antibot42.T39oe:
-        class: nekstati\antibot42\T39oe
+    nekstati.antibot42.fu4tB:
+        class: nekstati\antibot42\fu4tB
         arguments:
             - '@auth'
             - '@config'
@@ -17,12 +17,12 @@ services:
             - '@user'
             - '%core.root_path%'
             - '%core.php_ext%'
-            - '@nekstati.antibot42.X3Gh8'
+            - '@nekstati.antibot42.d0rOz'
         tags:
             - { name: event.listener }
 
-    nekstati.antibot42.ravC9:
-        class: nekstati\antibot42\ravC9
+    nekstati.antibot42.cIaPn:
+        class: nekstati\antibot42\cIaPn
         arguments:
             - '@config'
             - '@request'
@@ -31,8 +31,8 @@ services:
             - '%core.root_path%'
             - '%core.php_ext%'
 
-    nekstati.antibot42.X3Gh8:
-        class: nekstati\antibot42\X3Gh8
+    nekstati.antibot42.d0rOz:
+        class: nekstati\antibot42\d0rOz
         arguments:
             - '@config'
             - '@controller.helper'
@@ -41,4 +41,4 @@ services:
             - '@user'
             - '%core.root_path%'
         calls:
-            - [s_4wP, ['@?router']]
+            - [uFcLp, ['@?router']] # Optional service that doesn’t exist in phpBB 3.1
